@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'fontelegal';
+    src: url('fonts/graphik-14.ttf');
+}
+
+@font-face {
+    font-family: 'fontelegalsegundo';
+    src: url('fonts/TiemposHeadline-Bold.ttf');
+}
+
+.nav-link {
+    transition: box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffffff; 
+    box-shadow: 0 0 10px #676764;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+.background-image {
+    background: url('mg/Design sem nome.png') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+.overlay-text {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    font-family: 'fontelegalsegundo', sans-serif;
+    font-size: 36px;
+    line-height: 1.5;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.btn-neon {
+    background-color: #00ff00;
+    color: #000000;
+    border: none;
+    font-size: 18px;
+    font-family: 'fontelegal', sans-serif;
+    border-radius: 20px;
+}
+
+.btn-neon:hover {
+    background-color: #33ff33;
+}
+
+body {
+    background-color: #14181D;
+    color: #ffffff;
+}
+
+.img-fluid {
+    max-width: 100%;
+    border: 4px solid transparent;
+    border-radius: 12px;
+    transition: border-color 0.3s ease;
+}
+
+.img-fluid:hover {
+    border-color: #2dff88;
+}
+
+.film-icon {
+    width: 200px;
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+}
